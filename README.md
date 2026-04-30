@@ -2,13 +2,16 @@
 ## wait. Im a snake
 ![Screenshot_65](https://github.com/Faynot/Terminal-Snake-In-Rust/assets/119162922/9c2b43f9-44df-49f0-a9ba-3bda03b2ed46)
 
-cat <<EOF > /usr/share/calamares/branding/default/branding.desc
 ---
 componentName:   default
 
-welcomeStyleCalamares: false
-welcomeExpanding: normal
-windowPlacement: center
+# Эти три строки — магия для отображения
+welcomeStyleCalamares:   false
+welcomeExpanding:        normal
+windowPlacement:         center
+
+sidebar:    widget
+navigation: widget
 
 strings:
     productName:         "DumbArch Linux"
@@ -28,12 +31,4 @@ images:
 
 slideshow:
     - "welcome.png"
-
 slideshowAPI: 2
-
-style:
-    sidebarBackground:    "#eff0f1"
-    sidebarText:          "#31363b"
-    sidebarTextSelect:    "#ffffff"
-    sidebarTextHighlight: "#3daee9"
-EOF
