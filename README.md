@@ -2,28 +2,31 @@
 ## wait. Im a snake
 ![Screenshot_65](https://github.com/Faynot/Terminal-Snake-In-Rust/assets/119162922/9c2b43f9-44df-49f0-a9ba-3bda03b2ed46)
 
-cat <<EOF > /usr/share/calamares/branding/default/stylesheet.qss
-#mainApp {
-    background-color: #eff0f1;
-}
+---
+componentName: default
 
-#sidebarApp {
-    background-color: #31363b;
-}
+welcomeStyleCalamares: false
 
-QWidget {
-    color: #31363b;
-    background-color: #eff0f1;
-}
+strings:
+    productName:         "DumbArch Linux"
+    shortProductName:    "DumbArch"
+    productVersion:      "2026.04"
+    shortProductVersion: "2026.04"
+    versionedName:       "DumbArch Linux 2026.04"
+    shortVersionedName:  "DumbArch 2026.04"
+    bootloaderEntryName: "DumbArch"
 
-/* Это починит навигацию слева */
-QListView {
-    background-color: #31363b;
-    color: #ffffff;
-}
+images:
+    productLogo:         "logo.png"
+    productIcon:         "icon.png"
+    productWelcome:      "welcome.png"
 
-QListView::item:selected {
-    background-color: #3daee9;
-    color: #ffffff;
-}
-EOF
+slideshow:
+    - "welcome.png"
+slideshowAPI: 2
+
+style:
+    sidebarBackground:    "#eff0f1"
+    sidebarText:          "#31363b"
+    sidebarTextSelect:    "#2980b9"
+    sidebarTextHighlight: "#3daee9"
